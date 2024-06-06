@@ -123,8 +123,8 @@ const Toolbar: FC<ToolbarProps> = (props, ctx) => {
         @touchstart=${handleUnselectAll}
       >
         <${TextInput}
-          title="database name"
-          placeholder="database name"
+          title="Nome do banco de dados"
+          placeholder="nome do banco de dados"
           width=${150}
           value=${settings.databaseName}
           .onInput=${handleChangeDatabaseName}
