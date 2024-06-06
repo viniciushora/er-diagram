@@ -72,7 +72,7 @@ const Settings: FC<SettingsProps> = (props, ctx) => {
     emitter.emit(
       openToastAction({
         close: delay(2000),
-        message: html`<${Toast} title="Recalculated table width" />`,
+        message: html`<${Toast} title="Largura da tabela recalculada" />`,
       })
     );
   };
@@ -177,7 +177,7 @@ const Settings: FC<SettingsProps> = (props, ctx) => {
               ? html`
                   <div class=${styles.section}>
                     <div class=${styles.row}>
-                      <div>Relationship DataType Sync</div>
+                      <div>Sincronizar tipo de dado do relacionamento</div>
                       <div class=${styles.vertical(16)}></div>
                       <${Switch}
                         value=${settings.relationshipDataTypeSync}
@@ -186,7 +186,7 @@ const Settings: FC<SettingsProps> = (props, ctx) => {
                     </div>
 
                     <div class=${styles.row}>
-                      <div>Save Scroll Information</div>
+                      <div>Salvar informações de scroll</div>
                       <div class=${styles.vertical(16)}></div>
                       <${Switch}
                         value=${!bHas(
@@ -198,7 +198,7 @@ const Settings: FC<SettingsProps> = (props, ctx) => {
                     </div>
 
                     <div class=${styles.row}>
-                      <div>Save Zoom Information</div>
+                      <div>Salvar informações de zoom</div>
                       <div class=${styles.vertical(16)}></div>
                       <${Switch}
                         value=${!bHas(
@@ -210,7 +210,7 @@ const Settings: FC<SettingsProps> = (props, ctx) => {
                     </div>
 
                     <div class=${styles.row}>
-                      <div>Maximum comment width</div>
+                      <div>Tamanho máximo do comentário</div>
                       <div class=${styles.vertical(16)}></div>
                       <${Switch}
                         value=${!maxWidthCommentDisabled}
@@ -218,8 +218,8 @@ const Settings: FC<SettingsProps> = (props, ctx) => {
                       />
                       <div class=${styles.vertical(8)}></div>
                       <${TextInput}
-                        title="Maximum comment width"
-                        placeholder="Maximum comment width"
+                        title="Tamanho máximo do comentário"
+                        placeholder="Tamanho máximo do comentário"
                         width=${45}
                         value=${maxWidthCommentDisabled
                           ? toMaxWidthCommentFormat(COLUMN_MIN_WIDTH)
@@ -231,7 +231,7 @@ const Settings: FC<SettingsProps> = (props, ctx) => {
                     </div>
 
                     <div class=${styles.row}>
-                      <div>Recalculation table width</div>
+                      <div>Recalcular largura da tabela</div>
                       <div class=${styles.vertical(16)}></div>
                       <${Button}
                         variant="soft"
@@ -245,7 +245,7 @@ const Settings: FC<SettingsProps> = (props, ctx) => {
                       />
                     </div>
                     <div class=${styles.columnOrderSection}>
-                      <div>Column Order</div>
+                      <div>Ordem de Coluna</div>
                       <${Separator} space=${12} />
                       <div
                         class=${styles.columnOrderList}

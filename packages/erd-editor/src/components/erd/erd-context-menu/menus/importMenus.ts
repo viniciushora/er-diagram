@@ -19,7 +19,7 @@ export function createImportMenus(app: AppContext, onClose: () => void) {
         prefix: 'mdi',
         name: 'database-import',
       },
-      name: 'Schema SQL',
+      name: 'Script SQL',
       onClick: () => {
         importSchemaSQL(app);
         onClose();

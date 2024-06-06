@@ -19,7 +19,7 @@ const Viewer: React.FC<ViewerProps> = () => {
       {value.state === 'hasError' ? (
         <>
           <Text css={styles.description} size="4">
-            Select or create a schema.
+            Selecione ou crie um modelo.
           </Text>
           <Link
             css={styles.link}
@@ -27,10 +27,10 @@ const Viewer: React.FC<ViewerProps> = () => {
             target="_blank"
             underline="hover"
           >
-            Editing Guide
+            Guia de edição
           </Link>
           <Link
-            href="https://github.com/dineug/erd-editor"
+            href="https://github.com/viniciushora/er-diagram"
             target="_blank"
             underline="hover"
           >

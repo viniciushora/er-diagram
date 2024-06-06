@@ -144,7 +144,7 @@ const Column: FC<ColumnProps> = (props, ctx) => {
                 }}
               >
                 <${EditInput}
-                  placeholder="column"
+                  placeholder="coluna"
                   width=${widthName}
                   value=${column.name}
                   focus=${props.focusName}
@@ -202,7 +202,7 @@ const Column: FC<ColumnProps> = (props, ctx) => {
                   >
                     <${EditInput}
                       title=${column.comment}
-                      placeholder="comment"
+                      placeholder="comentário"
                       width=${widthComment}
                       value=${column.comment}
                       focus=${props.focusComment}

@@ -7,8 +7,8 @@ import { fontSize6 } from '@/styles/typography.styles';
 import * as styles from './SettingsLnb.styles';
 
 export const Lnb = {
-  preferences: 'Preferences',
-  shortcuts: 'Shortcuts',
+  preferences: 'Preferência',
+  shortcuts: 'Atalhos',
 } as const;
 export type Lnb = ValuesType<typeof Lnb>;
 const LnbList: ReadonlyArray<string> = Object.values(Lnb);
@@ -21,7 +21,7 @@ export type SettingsLnbProps = {
 const SettingsLnb: FC<SettingsLnbProps> = (props, ctx) => {
   return () => html`
     <div class=${styles.lnb}>
-      <div class=${fontSize6}>Settings</div>
+      <div class=${fontSize6}>Configurações</div>
       <${Separator} space=${12} />
       <div class=${['scrollbar', styles.list]}>
         ${LnbList.map(

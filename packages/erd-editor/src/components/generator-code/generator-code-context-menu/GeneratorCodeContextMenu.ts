@@ -39,7 +39,7 @@ const GeneratorCodeContextMenu: FC<GeneratorCodeContextMenuProps> = (
           children=${html`
             <${ContextMenu.Menu}
               icon=${html`<${Icon} name="code" size=${14} />`}
-              name="Language"
+              name="Linguagem"
               right=${chevronRightIcon}
             />
           `}
@@ -65,7 +65,7 @@ const GeneratorCodeContextMenu: FC<GeneratorCodeContextMenuProps> = (
               icon=${html`
                 <${Icon} prefix="mdi" name="format-letter-case" size=${14} />
               `}
-              name="Table Name Case"
+              name="Formato do Nome da Tabela"
               right=${chevronRightIcon}
             />
           `}
@@ -93,7 +93,7 @@ const GeneratorCodeContextMenu: FC<GeneratorCodeContextMenuProps> = (
                 name="format-letter-case"
                 size=${14}
               />`}
-              name="Column Name Case"
+              name="Formato do Nome da Coluna"
               right=${chevronRightIcon}
             />
           `}

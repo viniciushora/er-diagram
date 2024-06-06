@@ -38,10 +38,10 @@ export const BracketTypeMap: Record<number, string> = {
 };
 
 export const ColumnTypeToName: Record<number, string> = {
-  [ColumnType.columnName]: 'Name',
-  [ColumnType.columnDataType]: 'DataType',
+  [ColumnType.columnName]: 'Nome',
+  [ColumnType.columnDataType]: 'Tipo de Dado',
   [ColumnType.columnDefault]: 'Default',
-  [ColumnType.columnComment]: 'Comment',
+  [ColumnType.columnComment]: 'Comentário',
   [ColumnType.columnAutoIncrement]: 'Auto Increment',
   [ColumnType.columnUnique]: 'Unique',
   [ColumnType.columnNotNull]: 'Not Null',

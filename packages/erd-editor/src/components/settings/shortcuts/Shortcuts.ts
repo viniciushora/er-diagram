@@ -21,83 +21,83 @@ const Shortcuts: FC<ShortcutsProps> = (props, ctx) => {
 
     return [
       {
-        command: 'Editing',
+        command: 'Editar',
         shortcuts: keyBindingMap.edit,
       },
       {
-        command: 'Stop',
+        command: 'Parar',
         shortcuts: keyBindingMap.stop,
       },
       {
-        command: 'Search',
+        command: 'Buscar',
         shortcuts: keyBindingMap.search,
       },
       {
-        command: 'Undo',
+        command: 'Desfazer',
         shortcuts: keyBindingMap.undo,
       },
       {
-        command: 'Redo',
+        command: 'Refazer',
         shortcuts: keyBindingMap.redo,
       },
       {
-        command: 'Add Table',
+        command: 'Adicionar Tabela',
         shortcuts: keyBindingMap.addTable,
       },
       {
-        command: 'Add Column',
+        command: 'Adicionar Coluna',
         shortcuts: keyBindingMap.addColumn,
       },
       {
-        command: 'Add Memo',
+        command: 'Adicionar Anotação',
         shortcuts: keyBindingMap.addMemo,
       },
       {
-        command: 'Remove Table, Memo',
+        command: 'Remover Tabela, Anotação',
         shortcuts: keyBindingMap.removeTable,
       },
       {
-        command: 'Remove Column',
+        command: 'Remover Coluna',
         shortcuts: keyBindingMap.removeColumn,
       },
       {
-        command: 'Primary Key',
+        command: 'Chave Primária',
         shortcuts: keyBindingMap.primaryKey,
       },
       {
-        command: 'Select All Table, Memo',
+        command: 'Selecionar todas as Tabelas, Anotações',
         shortcuts: keyBindingMap.selectAllTable,
       },
       {
-        command: 'Select All Column',
+        command: 'Selecionar todas as Colunas',
         shortcuts: keyBindingMap.selectAllColumn,
       },
       {
-        command: 'Relationship Zero One',
+        command: 'Relacionamento (0,1)',
         shortcuts: keyBindingMap.relationshipZeroOne,
       },
       {
-        command: 'Relationship Zero N',
+        command: 'Relacionamento (0,n)',
         shortcuts: keyBindingMap.relationshipZeroN,
       },
       {
-        command: 'Relationship One Only',
+        command: 'Relacionamento (1,1)',
         shortcuts: keyBindingMap.relationshipOneOnly,
       },
       {
-        command: 'Relationship One N',
+        command: 'Relacionamento (1,n)',
         shortcuts: keyBindingMap.relationshipOneN,
       },
       {
-        command: 'Table Properties',
+        command: 'Propriedades da Tabela',
         shortcuts: keyBindingMap.tableProperties,
       },
       {
-        command: 'Zoom In',
+        command: 'Aumentar Zoom',
         shortcuts: keyBindingMap.zoomIn,
       },
       {
-        command: 'Zoom Out',
+        command: 'Diminuir Zoom',
         shortcuts: keyBindingMap.zoomOut,
       },
     ];
@@ -108,8 +108,8 @@ const Shortcuts: FC<ShortcutsProps> = (props, ctx) => {
       <table class=${styles.table}>
         <thead>
           <tr>
-            <th>Command</th>
-            <th>Keybinding</th>
+            <th>Comando</th>
+            <th>Atalho</th>
           </tr>
         </thead>
         <tbody>

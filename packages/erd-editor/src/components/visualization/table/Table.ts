@@ -54,7 +54,7 @@ const Table: FC<TableProps> = (props, ctx) => {
           <div class=${styles.headerInputWrap}>
             <div class="input-padding">
               <${EditInput}
-                placeholder="table"
+                placeholder="tabela"
                 width=${table.ui.widthName}
                 value=${table.name}
               />
@@ -63,7 +63,7 @@ const Table: FC<TableProps> = (props, ctx) => {
               ? html`
                   <div class="input-padding">
                     <${EditInput}
-                      placeholder="comment"
+                      placeholder="comentário"
                       width=${table.ui.widthComment}
                       value=${table.comment}
                     />

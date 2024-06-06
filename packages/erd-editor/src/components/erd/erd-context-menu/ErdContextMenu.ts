@@ -149,7 +149,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                 children=${html`
                   <${ContextMenu.Menu}
                     icon=${html`<${Icon} name="key" size=${14} />`}
-                    name="Primary Key"
+                    name="Chave Primária"
                     right=${html`
                       <${Kbd}
                         shortcut=${keyBindingMap.primaryKey[0]?.shortcut}
@@ -165,7 +165,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                     icon=${html`
                       <${Icon} prefix="mdi" name="table-cog" size=${14} />
                     `}
-                    name="Table Properties"
+                    name="Propriedades da Tabela"
                     right=${html`
                       <${Kbd}
                         shortcut=${keyBindingMap.tableProperties[0]?.shortcut}
@@ -179,7 +179,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                 children=${html`
                   <${ContextMenu.Menu}
                     icon=${html`<${Icon} name="palette" size=${14} />`}
-                    name="Color"
+                    name="Cor"
                   />
                 `}
               />
@@ -192,7 +192,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                       icon=${html`
                         <${Icon} prefix="mdi" name="vector-line" size=${14} />
                       `}
-                      name="Relationship Type"
+                      name="Tipo de Relacionamento"
                       right=${chevronRightIcon}
                     />
                   `}
@@ -235,7 +235,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                   children=${html`
                     <${ContextMenu.Menu}
                       icon=${html`<${Icon} name="table" size=${14} />`}
-                      name="New Table"
+                      name="Nova Tabela"
                       right=${html`
                         <${Kbd}
                           shortcut=${keyBindingMap.addTable[0]?.shortcut}
@@ -249,7 +249,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                   children=${html`
                     <${ContextMenu.Menu}
                       icon=${html`<${Icon} name="note-sticky" size=${14} />`}
-                      name="New Memo"
+                      name="Nova Anotação"
                       right=${html`
                         <${Kbd}
                           shortcut=${keyBindingMap.addMemo[0]?.shortcut}
@@ -264,7 +264,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                       icon=${html`
                         <${Icon} prefix="mdi" name="vector-line" size=${14} />
                       `}
-                      name="Relationship"
+                      name="Relacionamento"
                       right=${chevronRightIcon}
                     />
                   `}
@@ -298,7 +298,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                   children=${html`
                     <${ContextMenu.Menu}
                       icon=${html`<${Icon} name="eye" size=${14} />`}
-                      name="View Option"
+                      name="Ver Opção"
                       right=${chevronRightIcon}
                     />
                   `}
@@ -324,7 +324,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                       icon=${html`
                         <${Icon} prefix="mdi" name="database" size=${14} />
                       `}
-                      name="Database"
+                      name="Banco de Dados"
                       right=${chevronRightIcon}
                     />
                   `}
@@ -348,7 +348,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                   children=${html`
                     <${ContextMenu.Menu}
                       icon=${html`<${Icon} name="file-import" size=${14} />`}
-                      name="Import"
+                      name="Importar"
                       right=${chevronRightIcon}
                     />
                   `}
@@ -377,7 +377,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                   children=${html`
                     <${ContextMenu.Menu}
                       icon=${html`<${Icon} name="file-export" size=${14} />`}
-                      name="Export"
+                      name="Exportar"
                       right=${chevronRightIcon}
                     />
                   `}
@@ -412,7 +412,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                         name="atom"
                         size=${14}
                       />`}
-                      name="Automatic Table Placement"
+                      name="Colocação Automática de Tabela"
                     />
                   `}
                 />
@@ -425,7 +425,7 @@ const ErdContextMenu: FC<ErdContextMenuProps> = (props, ctx) => {
                         name="plus-minus-box"
                         size=${14}
                       />`}
-                      name="Diff Viewer"
+                      name="Comparar com outro modelo"
                     />
                   `}
                 />

@@ -63,7 +63,7 @@ const TablePropertiesIndexes: FC<TablePropertiesIndexesProps> = (
         )}
         <div
           class=${styles.addIndexButtonArea}
-          title="Add Index"
+          title="Adicionar Índice"
           @click=${handleAddIndex}
         >
           <${Icon} size=${12} name="plus" />

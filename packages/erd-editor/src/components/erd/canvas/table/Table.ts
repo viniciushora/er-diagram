@@ -294,7 +294,7 @@ const Table: FC<TableProps> = (props, ctx) => {
               @dblclick=${handleEdit}
             >
               <${EditInput}
-                placeholder="table"
+                placeholder="tabela"
                 width=${table.ui.widthName}
                 value=${table.name}
                 focus=${hasFocus(FocusType.tableName)}
@@ -317,7 +317,7 @@ const Table: FC<TableProps> = (props, ctx) => {
                     @dblclick=${handleEdit}
                   >
                     <${EditInput}
-                      placeholder="comment"
+                      placeholder="comentário"
                       width=${settings.maxWidthComment === -1
                         ? table.ui.widthComment
                         : settings.maxWidthComment < table.ui.widthComment

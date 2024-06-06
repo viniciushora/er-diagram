@@ -5,9 +5,9 @@ import { ValuesType } from '@/internal-types';
 import * as styles from './TablePropertiesTabs.styles';
 
 export const Tab = {
-  Indexes: 'Indexes',
-  SchemaSQL: 'Schema SQL',
-  GeneratorCode: 'Generator Code',
+  Indexes: 'Índices',
+  SchemaSQL: 'Modelo Físico',
+  GeneratorCode: 'Gerar Código',
 } as const;
 export type Tab = ValuesType<typeof Tab>;
 const tabs: ReadonlyArray<string> = Object.values(Tab);

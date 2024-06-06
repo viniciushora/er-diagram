@@ -33,7 +33,7 @@ export function createExportMenus(
         prefix: 'mdi',
         name: 'database-export',
       },
-      name: 'Schema SQL',
+      name: 'Script SQL',
       onClick: () => {
         onClose();
         exportSchemaSQL(createSchemaSQL(store.state), databaseName);

@@ -13,25 +13,25 @@ type Menu = {
 export const menus: Menu[] = [
   {
     iconName: 'ZeroOne',
-    name: 'Zero One',
+    name: '(0,1)',
     keyBindingName: KeyBindingName.relationshipZeroOne,
     relationshipType: RelationshipType.ZeroOne,
   },
   {
     iconName: 'ZeroN',
-    name: 'Zero N',
+    name: '(0,n)',
     keyBindingName: KeyBindingName.relationshipZeroN,
     relationshipType: RelationshipType.ZeroN,
   },
   {
     iconName: 'OneOnly',
-    name: 'One Only',
+    name: '1',
     keyBindingName: KeyBindingName.relationshipOneOnly,
     relationshipType: RelationshipType.OneOnly,
   },
   {
     iconName: 'OneN',
-    name: 'One N',
+    name: '(1,n)',
     keyBindingName: KeyBindingName.relationshipOneN,
     relationshipType: RelationshipType.OneN,
   },

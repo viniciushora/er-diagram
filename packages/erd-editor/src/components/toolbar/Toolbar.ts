@@ -130,16 +130,16 @@ const Toolbar: FC<ToolbarProps> = (props, ctx) => {
           .onInput=${handleChangeDatabaseName}
         />
         <${TextInput}
-          title="canvas size"
-          placeholder="canvas size"
+          title="Tamanho do canvas"
+          placeholder="Tamanho do canvas"
           width=${45}
           value=${settings.width.toString()}
           numberOnly=${true}
           .onChange=${handleResize}
         />
         <${TextInput}
-          title="zoom level"
-          placeholder="zoom level"
+          title="Nível do zoom"
+          placeholder="Nível do zoom"
           width=${45}
           value=${toZoomFormat(settings.zoomLevel)}
           numberOnly=${true}
@@ -151,7 +151,7 @@ const Toolbar: FC<ToolbarProps> = (props, ctx) => {
             styles.menu,
             { active: settings.canvasType === CanvasType.ERD },
           ]}
-          title="Entity Relationship Diagram"
+          title="Diagrama de Entidade Relacionamento - Modelo Lógico"
           @click=${() => handleChangeCanvasType(CanvasType.ERD)}
         >
           <${Icon} name="diagram-project" size=${16} />
@@ -161,7 +161,7 @@ const Toolbar: FC<ToolbarProps> = (props, ctx) => {
             styles.menu,
             { active: settings.canvasType === CanvasType.visualization },
           ]}
-          title="Visualization"
+          title="Visualização"
           @click=${() => handleChangeCanvasType(CanvasType.visualization)}
         >
           <${Icon} prefix="mdi" name="chart-scatter-plot" size=${16} />
@@ -171,7 +171,7 @@ const Toolbar: FC<ToolbarProps> = (props, ctx) => {
             styles.menu,
             { active: settings.canvasType === CanvasType.schemaSQL },
           ]}
-          title="Schema SQL"
+          title="Modelo Físico"
           @click=${() => handleChangeCanvasType(CanvasType.schemaSQL)}
         >
           <${Icon} prefix="mdi" name="database-export" size=${16} />
@@ -181,7 +181,7 @@ const Toolbar: FC<ToolbarProps> = (props, ctx) => {
             styles.menu,
             { active: settings.canvasType === CanvasType.generatorCode },
           ]}
-          title="Generator Code"
+          title="Genar Código"
           @click=${() => handleChangeCanvasType(CanvasType.generatorCode)}
         >
           <${Icon} name="file-code" size=${16} />
@@ -191,18 +191,18 @@ const Toolbar: FC<ToolbarProps> = (props, ctx) => {
             styles.menu,
             { active: settings.canvasType === CanvasType.settings },
           ]}
-          title="Settings"
+          title="Configurações"
           @click=${() => handleChangeCanvasType(CanvasType.settings)}
         >
           <${Icon} name="gear" size=${16} />
         </div>
         <div class=${styles.vertical}></div>
-        <div class=${styles.menu} title="Search" @click=${handleSearch}>
+        <div class=${styles.menu} title="Busca" @click=${handleSearch}>
           <${Icon} name="magnifying-glass" size=${16} />
         </div>
         ${props.enableThemeBuilder
           ? html`
-              <div class=${styles.menu} title="Theme" @click=${handleTheme}>
+              <div class=${styles.menu} title="Tema" @click=${handleTheme}>
                 <${Icon} name="circle-half-stroke" size=${16} />
               </div>
             `
@@ -218,7 +218,7 @@ const Toolbar: FC<ToolbarProps> = (props, ctx) => {
                     active: editor.hasUndo,
                   },
                 ]}
-                title="Undo"
+                title="Desfazer"
                 @click=${handleUndo}
               >
                 <${Icon} name="rotate-left" size=${16} />
@@ -231,7 +231,7 @@ const Toolbar: FC<ToolbarProps> = (props, ctx) => {
                     active: editor.hasRedo,
                   },
                 ]}
-                title="Redo"
+                title="Refazer"
                 @click=${handleRedo}
               >
                 <${Icon} name="rotate-right" size=${16} />
@@ -244,7 +244,7 @@ const Toolbar: FC<ToolbarProps> = (props, ctx) => {
                     active: editor.hasUndo || editor.hasRedo,
                   },
                 ]}
-                title="Time Travel"
+                title="Máquina do Tempo"
                 style=${{
                   'max-width': '26px',
                 }}

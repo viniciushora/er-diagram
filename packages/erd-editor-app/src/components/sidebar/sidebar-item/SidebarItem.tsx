@@ -88,7 +88,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ entity }) => {
         <TextField.Root css={styles.text}>
           <TextField.Input
             value={name}
-            placeholder="schema name"
+            placeholder="modelo"
             autoFocus
             onChange={handleChange}
             onBlur={handleStopEditing}
@@ -114,29 +114,29 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ entity }) => {
           </DropdownMenu.Trigger>
           <DropdownMenu.Content>
             <DropdownMenu.Item onClick={handleStartEditing}>
-              Rename
+              Renomear
             </DropdownMenu.Item>
             <AlertDialog.Trigger>
-              <DropdownMenu.Item color="red">Delete</DropdownMenu.Item>
+              <DropdownMenu.Item color="red">Excluir</DropdownMenu.Item>
             </AlertDialog.Trigger>
           </DropdownMenu.Content>
         </DropdownMenu.Root>
 
         <AlertDialog.Content style={{ maxWidth: 450 }}>
-          <AlertDialog.Title>Delete</AlertDialog.Title>
+          <AlertDialog.Title>Exclusão do modelo</AlertDialog.Title>
           <AlertDialog.Description size="2">
-            Are you sure? <Quote>{entity.name}</Quote>
+            Tem certeza? <Quote>{entity.name}</Quote>
           </AlertDialog.Description>
 
           <Flex gap="3" mt="4" justify="end">
             <AlertDialog.Cancel>
               <Button variant="soft" color="gray">
-                Cancel
+                Cancelar
               </Button>
             </AlertDialog.Cancel>
             <AlertDialog.Action onClick={() => deleteSchemaEntity(entity.id)}>
               <Button variant="solid" color="red">
-                Delete
+                Excluir
               </Button>
             </AlertDialog.Action>
           </Flex>

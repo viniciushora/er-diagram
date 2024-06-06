@@ -67,13 +67,10 @@ const SidebarCollaborative: React.FC<SidebarCollaborativeProps> = ({
 
       <Dialog.Content style={{ maxWidth: 450 }}>
         <Dialog.Title>
-          Collaborative editing{' '}
-          <Badge radius="full" color="orange">
-            Experiment
-          </Badge>
+          Edição Cooperativa{' '}
         </Dialog.Title>
         <Dialog.Description size="2" mb="4">
-          We exchange messages using end-to-end encryption.
+        Nós trocamos mensagens usando criptografia de ponta a ponta.
         </Dialog.Description>
 
         {hasCollaborative ? (
@@ -83,7 +80,7 @@ const SidebarCollaborative: React.FC<SidebarCollaborativeProps> = ({
                 Nickname
               </Text>
               <TextField.Input
-                placeholder="Your nickname"
+                placeholder="Seu nickname"
                 value={nickname}
                 maxLength={30}
                 onChange={handleChangeNickname}
@@ -110,18 +107,18 @@ const SidebarCollaborative: React.FC<SidebarCollaborativeProps> = ({
         <Flex gap="3" mt="4" justify="end">
           <Dialog.Close>
             <Button variant="soft" color="gray">
-              Close
+              Fechar
             </Button>
           </Dialog.Close>
           {hasCollaborative ? (
             <Dialog.Close onClick={handleStopSession}>
               <Button variant="solid" color="red">
-                Stop session
+                Parar sessão
               </Button>
             </Dialog.Close>
           ) : (
             <Button variant="solid" onClick={handleStartSession}>
-              Start session
+              Iniciar sessão
             </Button>
           )}
         </Flex>

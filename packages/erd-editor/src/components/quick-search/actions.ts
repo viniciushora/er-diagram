@@ -61,7 +61,7 @@ export function createScopeActions(app: AppContext): Action[] {
     ...allScopeActions,
     {
       icon: html`<${Icon} prefix="mdi" name="database" size=${16} />`,
-      name: 'Database',
+      name: 'Banco de Dados',
       next: databaseMenus.map<Action>(menu => ({
         icon:
           menu.value === settings.database
@@ -85,7 +85,7 @@ export function createScopeActions(app: AppContext): Action[] {
     },
     {
       icon: html`<${Icon} name="file-import" size=${16} />`,
-      name: 'Import',
+      name: 'Importar',
       next: [
         {
           icon: html`<${Icon} prefix="mdi" name="code-json" size=${16} />`,
@@ -100,7 +100,7 @@ export function createScopeActions(app: AppContext): Action[] {
             name="database-import"
             size=${16}
           />`,
-          name: 'Schema SQL',
+          name: 'Script SQL',
           perform: app => {
             importSchemaSQL(app);
           },
@@ -112,7 +112,7 @@ export function createScopeActions(app: AppContext): Action[] {
     },
     {
       icon: html`<${Icon} name="file-export" size=${16} />`,
-      name: 'Export',
+      name: 'Exportar',
       next: [
         {
           icon: html`<${Icon} prefix="mdi" name="code-json" size=${16} />`,
@@ -127,7 +127,7 @@ export function createScopeActions(app: AppContext): Action[] {
             name="database-export"
             size=${16}
           />`,
-          name: 'Schema SQL',
+          name: 'Script SQL',
           perform: ({ store }) => {
             exportSchemaSQL(
               createSchemaSQL(store.state),
@@ -142,7 +142,7 @@ export function createScopeActions(app: AppContext): Action[] {
     },
     {
       icon: html`<${Icon} name="table" size=${16} />`,
-      name: 'New Table',
+      name: 'Nova Tabela',
       shortcut: keyBindingMap.addTable[0]?.shortcut,
       perform: ({ store }) => {
         store.dispatch(addTableAction$());
@@ -153,7 +153,7 @@ export function createScopeActions(app: AppContext): Action[] {
     },
     {
       icon: html`<${Icon} name="note-sticky" size=${16} />`,
-      name: 'New Memo',
+      name: 'Nova anotação',
       shortcut: keyBindingMap.addMemo[0]?.shortcut,
       perform: ({ store }) => {
         store.dispatch(addMemoAction$());
@@ -165,7 +165,7 @@ export function createScopeActions(app: AppContext): Action[] {
     ...drawRelationshipMenus.map<Action>(menu => ({
       icon: html`<${Icon} prefix="base64" name=${menu.iconName} size=${16} />`,
       name: menu.name,
-      keywords: 'Relationship',
+      keywords: 'Relacionamento',
       shortcut: keyBindingMap[menu.keyBindingName][0]?.shortcut,
       perform: ({ store }) => {
         store.dispatch(drawStartRelationshipAction$(menu.relationshipType));
@@ -176,7 +176,7 @@ export function createScopeActions(app: AppContext): Action[] {
     })),
     {
       icon: html`<${Icon} prefix="mdi" name="atom" size=${16} />`,
-      name: 'Automatic Table Placement',
+      name: 'Colocação Automática de Tabela',
       perform: ({ store }) => {
         store.dispatch(
           changeOpenMapAction({ [Open.automaticTablePlacement]: true })
@@ -209,7 +209,7 @@ export function createScopeActions(app: AppContext): Action[] {
     },
     {
       icon: html`<${Icon} name="code" size=${16} />`,
-      name: 'Language',
+      name: 'Linguagem',
       next: languageMenus.map<Action>(menu => ({
         icon:
           menu.value === settings.language
@@ -232,7 +232,7 @@ export function createScopeActions(app: AppContext): Action[] {
       icon: html`
         <${Icon} prefix="mdi" name="format-letter-case" size=${16} />
       `,
-      name: 'Table Name Case',
+      name: 'Formato de Nome de Tabela',
       next: tableNameCaseMenus.map<Action>(menu => ({
         icon:
           menu.value === settings.tableNameCase
@@ -255,7 +255,7 @@ export function createScopeActions(app: AppContext): Action[] {
       icon: html`
         <${Icon} prefix="mdi" name="format-letter-case" size=${16} />
       `,
-      name: 'Column Name Case',
+      name: 'Formato de Nome de Coluna',
       next: columnNameCaseMenus.map<Action>(menu => ({
         icon:
           menu.value === settings.columnNameCase
@@ -316,11 +316,11 @@ function createTableActions({ store }: AppContext): Action[] {
 
 export const allScopeActions: Action[] = [
   {
-    name: 'Tab',
+    name: 'Aba',
     next: [
       {
         icon: html`<${Icon} name="diagram-project" size=${16} />`,
-        name: 'Entity Relationship Diagram',
+        name: 'Diagrama de Entidade Relacionamento - Modelo Lógico',
         perform: ({ store }) => {
           store.dispatch(changeCanvasTypeAction({ value: CanvasType.ERD }));
         },
@@ -334,7 +334,7 @@ export const allScopeActions: Action[] = [
           name="chart-scatter-plot"
           size=${16}
         />`,
-        name: 'Visualization',
+        name: 'Visualização',
         perform: ({ store }) => {
           store.dispatch(
             changeCanvasTypeAction({ value: CanvasType.visualization })
@@ -346,7 +346,7 @@ export const allScopeActions: Action[] = [
       },
       {
         icon: html`<${Icon} prefix="mdi" name="database-export" size=${16} />`,
-        name: 'Schema SQL',
+        name: 'Script SQL',
         perform: ({ store }) => {
           store.dispatch(
             changeCanvasTypeAction({ value: CanvasType.schemaSQL })
@@ -358,7 +358,7 @@ export const allScopeActions: Action[] = [
       },
       {
         icon: html`<${Icon} name="file-code" size=${16} />`,
-        name: 'Generator Code',
+        name: 'Gerar Código',
         perform: ({ store }) => {
           store.dispatch(
             changeCanvasTypeAction({ value: CanvasType.generatorCode })
@@ -370,7 +370,7 @@ export const allScopeActions: Action[] = [
       },
       {
         icon: html`<${Icon} name="gear" size=${16} />`,
-        name: 'Settings',
+        name: 'Configurações',
         perform: ({ store }) => {
           store.dispatch(
             changeCanvasTypeAction({ value: CanvasType.settings })

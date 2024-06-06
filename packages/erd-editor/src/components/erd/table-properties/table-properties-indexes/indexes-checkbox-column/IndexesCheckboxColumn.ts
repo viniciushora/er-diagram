@@ -58,7 +58,7 @@ const IndexesCheckboxColumn: FC<IndexesCheckboxColumnProps> = (props, ctx) => {
             template = html`
               <div class="column-col">
                 <${EditInput}
-                  placeholder="column"
+                  placeholder="coluna"
                   width=${columnWidth.name}
                   value=${column.name}
                 />
@@ -83,7 +83,7 @@ const IndexesCheckboxColumn: FC<IndexesCheckboxColumnProps> = (props, ctx) => {
               ? html`
                   <div class="column-col">
                     <${EditInput}
-                      placeholder="comment"
+                      placeholder="comentário"
                       width=${columnWidth.comment}
                       value=${column.comment}
                     />

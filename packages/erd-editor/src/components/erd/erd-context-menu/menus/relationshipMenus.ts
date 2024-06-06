@@ -13,22 +13,22 @@ type Menu = {
 const menus: Menu[] = [
   {
     iconName: 'ZeroOne',
-    name: 'Zero One',
+    name: '(0,1)',
     relationshipType: RelationshipType.ZeroOne,
   },
   {
     iconName: 'ZeroN',
-    name: 'Zero N',
+    name: '(0,n)',
     relationshipType: RelationshipType.ZeroN,
   },
   {
     iconName: 'OneOnly',
-    name: 'One Only',
+    name: '1',
     relationshipType: RelationshipType.OneOnly,
   },
   {
     iconName: 'OneN',
-    name: 'One N',
+    name: '(0,n)',
     relationshipType: RelationshipType.OneN,
   },
 ];

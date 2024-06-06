@@ -9,15 +9,15 @@ type Menu = {
 
 export const menus: Menu[] = [
   {
-    name: 'SingleQuote',
+    name: 'Aspas simples',
     value: BracketType.singleQuote,
   },
   {
-    name: 'DoubleQuote',
+    name: 'Aspas duplas',
     value: BracketType.doubleQuote,
   },
   {
-    name: 'Backtick',
+    name: 'Crases',
     value: BracketType.backtick,
   },
   {

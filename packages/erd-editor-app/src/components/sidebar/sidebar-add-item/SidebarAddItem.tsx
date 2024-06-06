@@ -42,7 +42,7 @@ const SidebarAddItem: React.FC<SidebarAddItemProps> = props => {
       <TextField.Root css={itemStyles.text}>
         <TextField.Input
           value={name}
-          placeholder="schema name"
+          placeholder="nome do modelo"
           autoFocus
           onChange={handleChange}
           onBlur={handleStopEditing}

@@ -85,8 +85,8 @@ const ThemeBuilder: FC<ThemeBuilderProps> = (props, ctx) => {
 
     return html`
       <div class=${['theme-builder', styles.root]}>
-        <div class=${styles.title}>Theme</div>
-        <div class=${styles.subTitle}>Accent color</div>
+        <div class=${styles.title}>Tema</div>
+        <div class=${styles.subTitle}>Cor de destaque</div>
         <div class=${styles.palette}>
           ${AccentColorList.map(
             key => html`
@@ -101,7 +101,7 @@ const ThemeBuilder: FC<ThemeBuilderProps> = (props, ctx) => {
             `
           )}
         </div>
-        <div class=${styles.subTitle}>Gray color</div>
+        <div class=${styles.subTitle}>Tom de cinza</div>
         <div class=${styles.palette}>
           ${GrayColorList.map(
             key => html`
@@ -116,7 +116,7 @@ const ThemeBuilder: FC<ThemeBuilderProps> = (props, ctx) => {
             `
           )}
         </div>
-        <div class=${styles.subTitle}>Appearance</div>
+        <div class=${styles.subTitle}>Modo</div>
         <div class=${styles.lightDarkButtonGroup}>
           <div
             class=${[
@@ -127,7 +127,7 @@ const ThemeBuilder: FC<ThemeBuilderProps> = (props, ctx) => {
           >
             <${Icon} prefix="mdi" name="white-balance-sunny" />
             <span class=${styles.vertical}></span>
-            <span>Light</span>
+            <span>Claro</span>
           </div>
           <div
             class=${[
@@ -139,7 +139,7 @@ const ThemeBuilder: FC<ThemeBuilderProps> = (props, ctx) => {
           >
             <${Icon} prefix="mdi" name="weather-might" />
             <span class=${styles.vertical}></span>
-            <span>Dark</span>
+            <span>Escuro</span>
           </div>
         </div>
       </div>

@@ -37,7 +37,7 @@ const SchemaSQLContextMenu: FC<SchemaSQLContextMenuProps> = (props, ctx) => {
               icon=${html`
                 <${Icon} prefix="mdi" name="database" size=${14} />
               `}
-              name="Database"
+              name="Banco de Dados"
               right=${chevronRightIcon}
             />
           `}

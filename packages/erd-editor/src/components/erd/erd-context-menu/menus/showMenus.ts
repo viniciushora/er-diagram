@@ -10,15 +10,15 @@ type Menu = {
 
 const menus: Menu[] = [
   {
-    name: 'Table Comment',
+    name: 'Comentário da Tabela',
     show: Show.tableComment,
   },
   {
-    name: 'Column Comment',
+    name: 'Comentário da Coluna',
     show: Show.columnComment,
   },
   {
-    name: 'DataType',
+    name: 'Tipo de Dado',
     show: Show.columnDataType,
   },
   {
@@ -38,7 +38,7 @@ const menus: Menu[] = [
     show: Show.columnAutoIncrement,
   },
   {
-    name: 'Relationship',
+    name: 'Relacionamento',
     show: Show.relationship,
   },
 ];

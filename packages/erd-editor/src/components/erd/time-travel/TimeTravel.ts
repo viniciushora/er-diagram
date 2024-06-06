@@ -119,8 +119,13 @@ const TimeTravel: FC<TimeTravelProps> = (props, ctx) => {
         .onChange=${handleChange}
       />
       <div class=${styles.vertical}></div>
-      <${Button} variant="soft" size="1" text="Apply" .onClick=${handleApply} />
-      <${Button} size="1" text="Cancel" .onClick=${handleClose} />
+      <${Button}
+        variant="soft"
+        size="1"
+        text="Aplicar"
+        .onClick=${handleApply}
+      />
+      <${Button} size="1" text="Cancelar" .onClick=${handleClose} />
     </div>
   `;
 };

@@ -50,7 +50,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
             variant="soft"
             onClick={handleStartEditing}
           >
-            New Schema
+            Novo Modelo
           </Button>
         </Flex>
         <ScrollArea scrollbars="vertical">
